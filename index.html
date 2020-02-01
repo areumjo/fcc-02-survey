@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css"></link>
+  <title>Apple Research</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">Apple 🍎</h1>
+    <h2 id="subtitle">Customer Satisfaction Survey</h2>
+      <p id="description">Help us improve and complete this survey.<br>
+      Thank you for participating in this survey! We would like to get your feedback 🍎</p>
+  </header>
+  <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/idl-shipping-pickup-header-201909?wid=2880&hei=960&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1566577240362">
+  <form id="survey-form">
+    <div class="form-group">
+      <label class="bold-label" id="name-label">Name:</label>
+      <input type="name" class="form-control" id="name" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label class="bold-label" id="email-label">Email:</label>
+      <input type="Email" class="form-control" id="email" placeholder="Enter your email" required>
+    </div>
+    <!-- check which one  -->
+    <div class="form-group">
+      <label class="bold-label">Check all products you have:</label>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="mac">
+        <label class="form-check-label">Mac</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="ipad">
+        <label class="form-check-label">iPad</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="iphone">
+        <label class="form-check-label">iPhone</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="watch">
+        <label class="form-check-label">Apple Watch</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="airpods">
+        <label class="form-check-label">AirPods</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="pencil">
+        <label class="form-check-label">Apple Pencil</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="tv">
+        <label class="form-check-label">Apple TV</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="other">
+        <label class="form-check-label">Other</label>
+      </div>
+    </div>
+    <!--   how many   -->
+    <div class="form-group">
+      <label class="bold-label">How many Apple products you have?:</label>
+      <select name="number" id="dropdown">
+        <option value="none">0</option>
+        <option value="one">1</option>
+        <option value="two">2</option>
+        <option value="three">3</option>
+        <option value="four">4</option>
+        <option value="five">5</option>
+        <option value="six">6</option>
+        <option value="seven-plus">+7</option>
+      </select>
+    </div>
+    <!--   since when   -->
+    <div class="form-group">
+      <label class="bold-label" id="number-label">When did you buy your first Apple product?:</label>
+      <input class="form-control" id="number" placeholder="Enter the year between 1976 and 2020" min="1976" max="2020" type="number" required>
+    </div>
+    <!--   needs   -->
+    <div class="form-group">
+      <label class="bold-label">How well does Apple product meet your needs?</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="needs" value="badly">Badly
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="needs" value="fine">Fine
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="needs" value="well">Well
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="needs" value="vwel">Very well
+      </div>
+ 
+    </div>
+    <!--   how satisfed   -->
+    <div class="form-group">
+      <label class="bold-label">Overall, how satisfied were you with Apple?</label>
+      <div class="block">
+        <div class="form-check block-check">
+        <input class="form-check-input" type="radio" name="satisfied" value="ex-dis">
+        <label class="form-check-label">Extremely dissatisfied</label>
+      </div>
+      <div class="form-check block-check">
+        <input class="form-check-input" type="radio" name="satisfied" value="some-dis">
+        <label class="form-check-label">Somewhat dissatisfied</label>
+      </div>
+      <div class="form-check block-check">
+        <input class="form-check-input" type="radio" name="satisfied" value="neither">
+        <label class="form-check-label">Neither satisfied nor dissatisfied</label>
+      </div>
+      <div class="form-check block-check">
+        <input class="form-check-input" type="radio" name="satisfied" value="some-sat">
+        <label class="form-check-label">Somewhat satisfied</label>
+      </div>
+      <div class="form-check block-check">
+        <input class="form-check-input" type="radio" name="satisfied" value="ex-sat">
+        <label class="form-check-label">Extremely satisfied</label>
+      </div>
+      </div>
+      
+    </div>
+    <!--   comment   -->
+    <div class="form-group">
+      <label class="bold-label" for="comment">Comment:</label>
+      <textarea placeholder="Enter any comment here" class="form-control" rows="5" id="comment"></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+    <button type="reset"  class="btn btn-danger" id="reset">Reset</button>
+  </form>
+  <footer>
+    <h3>Apple Customer Satisfaction Survey Form</h3>
+    <p>areumjo1@gmail.com<br>
+    © 2020 Areum Jo</p>
+  </footer>
+</body>
+</html>
